@@ -1,15 +1,19 @@
 <template>
   <div class="reset">
     <md-tabs md-alignment="fixed">
-      <md-tab id="tab-home" md-label="News">Hello</md-tab>
-      <md-tab id="tab-pages" md-label="Groups">World</md-tab>
+      <md-tab id="tab-home" md-label="News" ><NewFeeds/></md-tab>
+      <md-tab id="tab-pages" md-label="Groups"></md-tab>
     </md-tabs>
   </div>
 </template>
 
 <script>
+  import NewFeeds from '@/components/newfeeds.vue'
   export default {
-    name: 'TabAlignments'
+    name: 'TabAlignments',
+    components: {
+    NewFeeds
+  }
   }
 </script>
 
