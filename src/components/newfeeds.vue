@@ -30,6 +30,10 @@
 </template>
 
 <style lang="scss" scoped>
+.pos{
+  transform:none;
+  position:fixed;
+}
   .md-card {
     width: 320px;
     margin: 4px;
@@ -91,7 +95,8 @@ export default {
           name:'KyawWalar',
           content:'Help!',
           date:'5.12.2018',
-          proPic:'https://images-na.ssl-images-amazon.com/images/I/41BgUB8RcpL.jpg'
+          proPic:'https://images-na.ssl-images-amazon.com/images/I/41BgUB8RcpL.jpg',
+          img:''
          }
        ]
      }
