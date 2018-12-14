@@ -3,6 +3,12 @@
         
         <md-speed-dial class="md-bottom-right md-fixed">
           <md-dialog :md-active.sync="showDialog">
+             <md-dialog-actions class="md-top-left">
+        <md-button class="md-primary " @click="showDialog = false">Close</md-button>
+        
+      
+            <md-button class="md-primary " @click="showDialog = false">Post</md-button>
+          </md-dialog-actions>
             <span v-for="i in data">
             <md-avatar  class="ava">
             <img v-bind:src="i.proPic"/>
@@ -18,11 +24,18 @@
       <md-tabs md-dynamic-height>
         
       </md-tabs>
-
-     <md-dialog-actions>
-        <md-button class="md-primary " @click="showDialog = false">Close</md-button>
-        <md-button class="md-primary " @click="showDialog = false">Post</md-button>
-      </md-dialog-actions>
+     
+      <md-button class="md-fab md-fab-bottom-left md-primary">
+        <md-icon md-src="https://image.flaticon.com/icons/svg/1246/1246324.svg ">menu</md-icon>
+      </md-button>
+      <md-button class="md-fab md-fab-bottom-center md-primary">
+        <md-icon md-src="https://image.flaticon.com/icons/svg/1246/1246239.svg">menu</md-icon>
+      </md-button>
+      <md-button class="md-fab md-fab-bottom-right md-primary">
+        <md-icon md-src="https://image.flaticon.com/icons/svg/1244/1244574.svg">menu</md-icon>
+      </md-button>
+  
+    
     </md-dialog>
           <md-speed-dial-target class="md-primary md-accent md-raised" @click="showDialog = true" >
             <md-icon md-src="https://image.flaticon.com/icons/svg/1246/1246321.svg">add</md-icon>
@@ -33,6 +46,12 @@
 .tex{
   width:90%;
   margin:auto;
+ background-color: transparent;
+    border: 0px solid;
+    color: #CCC;
+}
+.tab{
+ margin-bottom:10px;
 }
 .ava{
     float:left;
